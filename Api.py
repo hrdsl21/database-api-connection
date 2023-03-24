@@ -1,8 +1,9 @@
-from fastapi import FastAPI, HTTPException, Depends
-from pydantic import BaseModel, Field
 import models
-from database import engine, Sessionlocal
+# from datetime import datetime
 from sqlalchemy.orm import Session
+from pydantic import BaseModel, Field
+from database import engine, Sessionlocal
+from fastapi import FastAPI, HTTPException, Depends
 
 app = FastAPI()
 
@@ -43,6 +44,7 @@ def create_task(task: Task, db: Session = Depends(get_db)):
     task_model.status = task.status
     task_model.count_Up = task.count_Up
     task_model.count_Down = task.count_Down
+    # task_model.date = datetime.now()
 
     db.add(task_model)
     db.commit()
