@@ -1,8 +1,17 @@
-# database-api-connection
-Easy way to connect db with api
+# Database-api-connection
+Easy way to connect database Mysql with api
+I use apache  server for Mysql 
 
 ## Installation
-pip install, etc
+Use pip install 
+
+##Library:
+fastapi
+mysqlclient
+pydantic
+SQLAlchemy
+starlette
+uvicorn
 
 ## Configuration
-where change db config, maybe add argparser to configure database from cli
+This script show first step on connection and preper base and fast_api to build future app 
