@@ -1,17 +1,11 @@
 # Database-api-connection
-Easy way to connect database Mysql with api
-I use apache  server for Mysql 
+Easy way to connect database Mysql with api, for mysql i use apache server 
 
 ## Installation
-Use pip install 
+`pip install -r reuirements.txt`
 
-##Library:
-fastapi
-mysqlclient
-pydantic
-SQLAlchemy
-starlette
-uvicorn
+## Run program:
+`uvicorn app:api --reload`
 
 ## Configuration
 This script show first step on connection and preper base and fast_api to build future app 
